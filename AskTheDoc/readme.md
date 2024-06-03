@@ -49,9 +49,9 @@ COPY . ./
 ENTRYPOINT [ "streamlit", "run", "admin.py", "--server.port=8083", "--server.address=0.0.0.0" ]
 ```
 ### Running the Admin Application
-Build and run the Docker image for the Admin application with the following commands:
-docker build -t pdf-reader-admin ./Admin
-docker run -e BUCKET_NAME=your-bucket-name -v ~/.aws:/root/.aws -p 8083:8083 -it pdf-reader-admin
+Build and run the Docker image for the Admin application with the following commands:<br>
+docker build -t pdf-reader-admin ./Admin<br>
+docker run -e BUCKET_NAME=your-bucket-name -v ~/.aws:/root/.aws -p 8083:8083 -it pdf-reader-admin<br>
 
 ## User Application
 The User application allows users to interact with the PDF documents processed by the Admin app. Users can ask questions and get responses based on the contents of the PDFs.
