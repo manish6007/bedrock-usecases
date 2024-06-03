@@ -40,12 +40,12 @@ langchain_community<br>
 The Dockerfile for the Admin application:
 
 ```Dockerfile<br>
-FROM python:3.11<br>
-EXPOSE 8083<br>
-WORKDIR /app<br>
-COPY requirements.txt ./<br>
-RUN pip install -r requirements.txt<br>
-COPY . ./<br>
+FROM python:3.11
+EXPOSE 8083
+WORKDIR /app
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
+COPY . ./
 ENTRYPOINT [ "streamlit", "run", "admin.py", "--server.port=8083", "--server.address=0.0.0.0" ]
 ```
 ### Running the Admin Application
