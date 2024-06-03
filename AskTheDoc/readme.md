@@ -39,7 +39,7 @@ langchain_community<br>
 
 The Dockerfile for the Admin application:
 
-```Dockerfile<br>
+```Dockerfile
 FROM python:3.11
 EXPOSE 8083
 WORKDIR /app
